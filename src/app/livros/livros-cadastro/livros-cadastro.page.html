@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [formGroup]="form">
+  <ion-card>
+    <ion-card-content>
+      <div>
+
+        <ion-item>
+          <ion-label position="stacked">Titúlo do livro:</ion-label>
+          <ion-input type="text" formControlName="titulo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Gênero:</ion-label>
+          <ion-select formControlName="genero">
+            <ion-select-option value="FANTASIA">Fantasia</ion-select-option>
+            <ion-select-option value="TERROR">Terror</ion-select-option>
+            <ion-select-option value="FICCAO">Ficção científica</ion-select-option>
+            <ion-select-option value="ROMANCE">Romance</ion-select-option>
+            <ion-select-option value="BIOGRAFIAS">Biografias e autobiografias</ion-select-option>
+            <ion-select-option value="TECNOLOGIA">Tecnologia</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Estado:</ion-label>
+          <ion-select formControlName="estado">
+            <ion-select-option value="NOVO">Novo</ion-select-option>
+            <ion-select-option value="COMONOVO">Como Novo</ion-select-option>
+            <ion-select-option value="USADO">Usado</ion-select-option>
+            <ion-select-option value="BEMUSADO">Bem Usado</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Foto (URL):</ion-label>
+          <ion-input type="url" formControlName="foto" ></ion-input>
+        </ion-item>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="salvar()" [disabled]="!form.valid" color="tertiary">
+      <ion-icon name="checkmark"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,90 @@
+{
+  "loja": [
+    {
+      "id": 2,
+      "titulo": "O Diário de Anne Frank",
+      "genero": "Biografias e autobiografias",
+      "estado": "novo",
+      "foto": "https://m.media-amazon.com/images/I/41eve-WrCBL.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "O Morro dos Ventos Uivantes",
+      "genero": "Romance",
+      "estado": "usado",
+      "foto": "https://m.media-amazon.com/images/I/51rBInKTf0L.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "É Assim que Acaba",
+      "genero": "Romance",
+      "estado": "novo",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51i7kH+rh9L._SX322_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Harry Potter e a pedra filosofal",
+      "genero": "fantasia",
+      "estado": "usado",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg"
+    }
+  ],
+  "meusLivros": [
+    {
+      "id": 1,
+      "titulo": "O iluminado",
+      "genero": "FICCAO",
+      "estado": "USADO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51qNYKYrFHS._SX346_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Eu, Robô",
+      "genero": "FICCAO",
+      "estado": "NOVO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/414QJOKvD+L._SX328_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Código limpo",
+      "genero": "TECNOLOGIA",
+      "estado": "NOVO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41aHzYSXZkL._SX380_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Carrie a estranha",
+      "genero": "TERROR",
+      "estado": "BEMUSADO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51ca8fuem0L._SX331_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Duna",
+      "genero": "FICCAO",
+      "estado": "COMONOVO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41MRn6hy8-L._SX346_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "É Assim que Acaba",
+      "genero": "ROMANCE",
+      "estado": "NOVO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/91r5G8RxqfL._AC_UL604_SR604,400_.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "O Hobbit",
+      "genero": "FANTASIA",
+      "estado": "COMONOVO",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/511+-lOOtsL._SX319_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Eu sou a lenda",
+      "genero": "TERROR",
+      "estado": "COMONOVO",
+      "foto": "https://m.media-amazon.com/images/I/61jhTWJ4nkL.jpg"
+    }
+  ]
+}

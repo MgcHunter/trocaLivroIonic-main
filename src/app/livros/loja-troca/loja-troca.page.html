@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Trocar Livro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Trocar livro:</ion-card-subtitle>
+      <ion-card-title >{{lojas?.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div>
+        <ion-item>
+          <ion-label position="stacked">Por seu livro:</ion-label>
+          <ion-select [value]="IdMeuLivro" [(ngModel)]="IdMeuLivro">
+            <ion-select-option *ngFor="let livro of livros" [value]="livro.id" >{{livro.titulo}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="atualizaLivro(IdMeuLivro, lojas)" color="tertiary">
+      <ion-icon name="checkmark"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="star">
+    <ion-fab-button color="danger" [routerLink]="'/loja'" >
+      <ion-icon name="arrow-undo"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

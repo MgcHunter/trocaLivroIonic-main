@@ -1,0 +1,7 @@
+{
+  "name": "trocalivro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
