@@ -8,6 +8,14 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'cadastro-autor',
+    loadChildren: () => import('./livros/cadastro-autor/cadastro-autor.module').then( m => m.cadastroautorpagemodule)
+  },
+  {
+    path: 'cadastro-editora',
+    loadChildren: () => import ('./livros/cadastro-editora/cadastro-editora.module').then( m => m.CadastroEditoraPageModule)
+  },
+  {
     path: 'loja',
     loadChildren: () => import('./livros/loja/loja.module').then( m => m.LojaPageModule)
   },
@@ -22,7 +30,7 @@ const routes: Routes = [
   {
     path: 'loja-troca',
     loadChildren: () => import('./livros/loja-troca/loja-troca.module').then( m => m.LojaTrocaPageModule)
-  }
+  },
 ];
 
 @NgModule({

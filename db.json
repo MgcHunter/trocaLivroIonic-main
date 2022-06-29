@@ -8,25 +8,11 @@
       "foto": "https://m.media-amazon.com/images/I/41eve-WrCBL.jpg"
     },
     {
-      "id": 3,
-      "titulo": "O Morro dos Ventos Uivantes",
-      "genero": "Romance",
-      "estado": "usado",
-      "foto": "https://m.media-amazon.com/images/I/51rBInKTf0L.jpg"
-    },
-    {
       "id": 4,
       "titulo": "É Assim que Acaba",
       "genero": "Romance",
       "estado": "novo",
       "foto": "https://images-na.ssl-images-amazon.com/images/I/51i7kH+rh9L._SX322_BO1,204,203,200_.jpg"
-    },
-    {
-      "id": 5,
-      "titulo": "Harry Potter e a pedra filosofal",
-      "genero": "fantasia",
-      "estado": "usado",
-      "foto": "https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg"
     }
   ],
   "meusLivros": [
@@ -39,10 +25,10 @@
     },
     {
       "id": 2,
-      "titulo": "Eu, Robô",
-      "genero": "FICCAO",
-      "estado": "NOVO",
-      "foto": "https://images-na.ssl-images-amazon.com/images/I/414QJOKvD+L._SX328_BO1,204,203,200_.jpg"
+      "titulo": "O Morro dos Ventos Uivantes",
+      "genero": "Romance",
+      "estado": "usado",
+      "foto": "https://m.media-amazon.com/images/I/51rBInKTf0L.jpg"
     },
     {
       "id": 3,
@@ -85,6 +71,31 @@
       "genero": "TERROR",
       "estado": "COMONOVO",
       "foto": "https://m.media-amazon.com/images/I/61jhTWJ4nkL.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "teste",
+      "genero": "TECNOLOGIA",
+      "estado": "USADO",
+      "foto": "https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2021/03/aguia-conheca-as-especies-mais-imponentes-e-populares-do-mundo-960x575.jpg"
+    }
+  ],
+  "autores": [
+    {
+      "id": 1,
+      "nome": "J.K Rowling",
+      "nacionalidade": "Inglesa",
+      "datanascimento": "1965-06-31",
+      "sexo": "FEMININO",
+      "foto": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3bDP-AbnH7l2pjO-SwJkEFQu9dxDE6V8wyJ_5x_lfkVpTMA80"
+    },
+    {
+      "id": 2,
+      "nome": "J. R. R. Tolkien",
+      "nacionalidade": "SulAfricano",
+      "datanascimento": "1892-01-03",
+      "sexo": "MASCULINO",
+      "foto": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQIGDwZGQIstDH0OwNYJ_KZlSW14rIAZ6W_8XLg5b8GUCmbJnQ4cI-PqSOommRHEpfQ"
     }
   ]
 }

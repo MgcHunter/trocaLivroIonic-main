@@ -8,16 +8,15 @@ import {
   ViewWillLeave,
 } from '@ionic/angular';
 import { MessageService } from '../../service/message.service';
-import { AutorApiService } from '../autor-api.service';
-import { Sexo } from '../autor.model';
+import { EditoraApiService } from '../editora-api.service';
 import { finalize } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-cadastro-autor',
-  templateUrl: './cadastro-autor.page.html',
-  styleUrls: ['./cadastro-autor.page.scss'],
+  selector: 'app-cadastro-editora',
+  templateUrl: './cadastro-editora.page.html',
+  styleUrls: ['./cadastro-editora.page.scss'],
 })
-export class CadastroAutorPage
+export class CadastroEditoraPage
   implements
     OnInit,
     OnDestroy,
@@ -31,22 +30,18 @@ export class CadastroAutorPage
 
   constructor(
     private formBuilder: FormBuilder,
-    private autorApiService: AutorApiService,
+    private editoraApiService: EditoraApiService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private messageService: MessageService,
   ) {}
 
   ngOnInit() {
-    console.log('CadastroAutorPage ngOnInit');
+    console.log('EditoraRegisterPage ngOnInit');
 
     this.form = this.formBuilder.group({
       id: [''],
       nome: ['', [Validators.required, Validators.minLength(3)]],
-      nacionalidade: ['', Validators.required],
-      dataNascimento: [''],
-      sexo: [Sexo.MASCULINO, Validators.required],
-      foto: ['', Validators.required],
     });
 
     const id = +this.activatedRoute.snapshot.params.id;
@@ -57,7 +52,7 @@ export class CadastroAutorPage
 
   findById(id: number) {
     this.loading = true;
-    this.autorApiService
+    this.editoraApiService
       .findById(id)
       .pipe(
         finalize(() => {
@@ -65,39 +60,39 @@ export class CadastroAutorPage
         })
       )
       .subscribe(
-        (autor) => {
-          if (autor) {
+        (editora) => {
+          if (editora) {
             this.form.patchValue({
-              ...autor,
+              ...editora,
             });
           }
         },
         () =>
           this.messageService.error(
-            `Erro ao buscar o autor com código ${id}`,
+            `Erro ao buscar a Editora com código ${id}`,
             () => this.findById(id)
           )
       );
   }
 
   ionViewWillEnter(): void {
-    console.log('CadastroAutorPage ionViewWillEnter');
+    console.log('EditoraRegisterPage ionViewWillEnter');
   }
 
   ionViewDidEnter(): void {
-    console.log('CadastroAutorPage ionViewDidEnter');
+    console.log('EditoraRegisterPage ionViewDidEnter');
   }
 
   ionViewWillLeave(): void {
-    console.log('CadastroAutorPage ionViewWillLeave');
+    console.log('EditoraRegisterPage ionViewWillLeave');
   }
 
   ionViewDidLeave(): void {
-    console.log('CadastroAutorPage ionViewDidLeave');
+    console.log('EditoraRegisterPage ionViewDidLeave');
   }
 
   ngOnDestroy(): void {
-    console.log('CadastroAutorPage ngOnDestroy');
+    console.log('EditoraRegisterPage ngOnDestroy');
   }
 
   salvar() {
@@ -112,7 +107,7 @@ export class CadastroAutorPage
 
     this.loading = true;
 
-    this.autorApiService
+    this.editoraApiService
       .save(value)
       .pipe(
         finalize(() => {
@@ -121,12 +116,11 @@ export class CadastroAutorPage
       )
       .subscribe(
         () => {
-          this.messageService.sucess(`Game ${nome} foi salvo sucesso!`);
-          this.router.navigate(['games-list']);
+          this.messageService.sucess(`Editora ${nome} foi salvo sucesso!`);
         },
         ({ error }) => {
           const erro = error?.erro ?? '';
-          const mensagem = `Erro ao salvar o game ${nome} ${erro ? ': '+erro:''}`;
+          const mensagem = `Erro ao salvar a Editora ${nome} ${erro ? ': '+erro:''}`;
           this.messageService.error(mensagem, () => this.salvar());
         }
       );

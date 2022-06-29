@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { cadastroautorPageRoutingModule } from './cadastro-autor-routing.module';
+import { CadastroEditoraPageRouting } from './cadastro-editora-routing.module';
 
-import { CadastroAutorPage } from './cadastro-autor.page';
+import { CadastroEditoraPage } from './cadastro-editora.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,11 @@ import { CadastroAutorPage } from './cadastro-autor.page';
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    cadastroautorPageRoutingModule
+    CadastroEditoraPageRouting
   ],
-  declarations: [CadastroAutorPage]
+  declarations: [CadastroEditoraPage]
 })
-export class cadastroautorpagemodule {}
+export class CadastroEditoraPageModule {}
+
+
+

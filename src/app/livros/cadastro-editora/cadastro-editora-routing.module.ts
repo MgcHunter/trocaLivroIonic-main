@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CadastroAutorPage } from './cadastro-autor.page';
+import { CadastroEditoraPage } from './cadastro-editora.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: CadastroAutorPage,
+    component: CadastroEditoraPage
   },
   {
     path: ':id',
-    component: CadastroAutorPage,
+    component: CadastroEditoraPage,
   }
-
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class cadastroautorPageRoutingModule {}
+export class CadastroEditoraPageRouting {}

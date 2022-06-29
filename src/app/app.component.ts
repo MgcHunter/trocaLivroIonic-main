@@ -9,6 +9,8 @@ export class AppComponent {
     { title: 'Loja', url: '/loja', icon: 'storefront' },
     { title: 'Biblioteca', url: '/livros-biblioteca', icon: 'book' },
     { title: 'Cadastro', url: '/livros-cadastro', icon: 'save' },
+    { title: 'Autor', url: '/cadastro-autor', icon: 'book'},
+    { title: 'Editora', url: '/cadastro-editora', icon: 'book'},
   ];
 
   constructor() {}

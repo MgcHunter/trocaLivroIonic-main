@@ -6,14 +6,6 @@ export interface Livro {
     foto: string;
   }
 
-export interface autor{
-    id: number;
-    nome: string;
-    nacionalidade: string;
-    dataNascimento: string;
-    foto: string;
-}
-
   export enum Genero {
     FANTASIA    = 'FANTASIA',
     TERROR      = 'TERROR',
@@ -28,10 +20,4 @@ export interface autor{
     COMONOVO = 'COMONOVO',
     USADO    = 'USADO',
     BEMUSADO = 'BEMUSADO',
-  }
-
-  export enum Sexo{
-    MASCULINO = 'MASCULINO',
-    FEMININO  = 'FEMININO',
-    OUTROS    = 'OUTROS',
   }
