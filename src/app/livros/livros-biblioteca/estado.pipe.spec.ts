@@ -14,5 +14,4 @@ export class EstadoPipe implements PipeTransform {
       case Estado.USADO: return 'Usado';
     }
   }
-
 }

@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router} from '@angular/router';
 import { MessageService } from 'src/app/service/message.service';
 import { LivrosApiService } from '../livros-api.service';
-import { Estado, Genero } from '../livros.model';
 
 @Component({
   selector: 'app-livros-cadastro',
@@ -26,9 +25,9 @@ export class LivrosCadastroPage implements OnInit {
     this.form = this.formBuilder.group({
       id:[''],
       titulo:['', [Validators.required, Validators.minLength(3)]],
-      genero:[Genero.ROMANCE],
-      estado:[Estado.USADO],
-      foto:['', Validators.required]
+      stitulo:['', [Validators.required, Validators.minLength(3)]],
+      editora:['', [Validators.required, Validators.minLength(3)]],
+      lancamento:['']
     });
 
     const id = +this.activatedRoute.snapshot.params.id;

@@ -1,9 +1,9 @@
 export interface Livro {
     id: number;
     titulo: string;
-    genero: Genero;
-    estado: Estado;
-    foto: string;
+    stitulo: string;
+    editora: string;
+    lancamento: string;
   }
 
   export enum Genero {

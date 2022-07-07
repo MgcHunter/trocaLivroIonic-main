@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Cadastro</ion-title>
+    <ion-title>Cadastro de Livros</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,30 +18,23 @@
         </ion-item>
 
         <ion-item>
-          <ion-label position="stacked">Gênero:</ion-label>
-          <ion-select formControlName="genero">
-            <ion-select-option value="FANTASIA">Fantasia</ion-select-option>
-            <ion-select-option value="TERROR">Terror</ion-select-option>
-            <ion-select-option value="FICCAO">Ficção científica</ion-select-option>
-            <ion-select-option value="ROMANCE">Romance</ion-select-option>
-            <ion-select-option value="BIOGRAFIAS">Biografias e autobiografias</ion-select-option>
-            <ion-select-option value="TECNOLOGIA">Tecnologia</ion-select-option>
-          </ion-select>
+          <ion-label position="stacked">SubTítulo do livro:</ion-label>
+          <ion-input type="text" formControlName="stitulo"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="stacked">Editora:</ion-label>
+          <ion-input type="text" formControlName="editora"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label position="stacked">Estado:</ion-label>
-          <ion-select formControlName="estado">
-            <ion-select-option value="NOVO">Novo</ion-select-option>
-            <ion-select-option value="COMONOVO">Como Novo</ion-select-option>
-            <ion-select-option value="USADO">Usado</ion-select-option>
-            <ion-select-option value="BEMUSADO">Bem Usado</ion-select-option>
-          </ion-select>
-        </ion-item>
-
-        <ion-item>
-          <ion-label position="stacked">Foto (URL):</ion-label>
-          <ion-input type="url" formControlName="foto" ></ion-input>
+          <ion-label position="stacked">Lançamento: </ion-label>
+          <ion-datetime
+            displayFormat="DD/MM/YYYY"
+            cancelText="Cancelar"
+            doneText="Selecionar"
+            formControlName="lancamento"
+          ></ion-datetime>
         </ion-item>
 
       </div>
